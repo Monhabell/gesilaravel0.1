@@ -1,0 +1,317 @@
+ .chat-header {
+    z-index: -1;
+    padding: 5px;
+    background-color: #004f74;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+.user-info{
+    width: auto;
+    margin: 0px;
+}
+.NombreDigLine{
+    font-size: 15px;
+    margin: 0px;
+}
+
+.chat-body {
+    padding: 10px;
+    height: 50vh;
+    
+    overflow-y: auto;
+}
+
+/* Estilos personalizados para la barra de desplazamiento */
+.chat-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-body::-webkit-scrollbar-track {
+    background-color: #f2f2f2;
+}
+
+.chat-body::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.user-list {
+    text-align: center;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+.user-list li {
+    padding: 8px 0;
+}
+
+.chat-toggle {
+    cursor: pointer;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#chat-toggle i {
+    font-size: 18px;
+}
+
+#chat-close {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#chat-close i {
+    font-size: 10px;
+    color: #ffffff;
+}
+
+.fondoIcon{
+    background-color: #212529;
+    z-index: 40;
+}
+
+.user-item{
+    background-color: rgb(255, 255, 255);
+    width: 92%;
+    margin-top: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: left;
+    height: 50px;
+    border-color: #d4d4d400;
+    /*border-bottom: 1px solid  #21252994;*/
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.2);
+    
+}
+
+.imgchat {
+    width: 40px; /* Establece el ancho */
+    height: 40px; /* Establece la altura */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    margin-right: 23px;
+    margin-left: 5px;
+}
+
+.Cajachat{
+    background-image: url('https://img.freepik.com/fotos-premium/diseno-fondo-abstracto-blanco_660331-18.jpg?w=2000');
+    background-size: cover; /* Ajusta la imagen al tamaño del div, manteniendo la proporción */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.chat1{
+    max-width: 400px;
+    margin: 6px auto;
+}
+
+.message {
+    height: auto;
+    margin: 5px;
+    padding: 2px;
+    border-radius: 10px;
+    font-size: 14px;
+    overflow: hidden;
+    word-wrap: break-word;
+    max-width: 70%;
+}
+
+.received {
+    color: white;
+    background-color: #004f74;
+    float: right; /* Alinea el mensaje recibido a la derecha */
+    clear: both;
+    width: auto; /* Ajusta automáticamente el ancho */
+    -webkit-box-shadow: -8px 7px 9px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 7px 9px -6px rgba(0,0,0,0.75);
+    box-shadow: -8px 7px 9px -6px rgba(0,0,0,0.75);
+}
+
+.sent {
+    color: #212529;
+    background-color: #ffffff;
+    text-align: right;
+    float: left; /* Alinea el mensaje enviado a la izquierda */
+    clear: both;
+    width: auto; /* Ajusta automáticamente el ancho */
+    -webkit-box-shadow: -8px 7px 9px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 7px 9px -6px rgba(0,0,0,0.75);
+    box-shadow: -8px 7px 9px -6px rgba(0,0,0,0.75);
+}
+
+/* Para evitar problemas de clearfix */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.timestamp {
+    font-size: 8px;
+    left: 5px;
+    margin: 3px;
+}
+.txt{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 1px;
+    margin-top: 2px;
+}
+
+.enviarMsjtxt{
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #f7f7f7;
+}
+
+.inputmesaje{
+    width: 70%;
+    background-color: #f7f7f7;
+    height: auto;
+    border: none;
+
+}
+
+.inputmesaje:focus{
+    outline: none;
+}
+
+.btnsend{
+    background-color: #f2f2f200;
+    border-color: rgba(255, 255, 255, 0);
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.btnregresar{
+    position: absolute;
+    float: left;
+    margin-top: -34px;
+    background-color: #f2f2f200;
+    border-color: #cccccc00;
+}
+
+.emoji-selector {
+    display: none;
+    /* Otros estilos que puedas tener para la sección de emojis */
+}
+
+
+.emoji{
+    font-size: 20px;
+    height: auto;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+    background-color: #21252900;
+    border-color: #21252900;
+}
+
+.emojiopen{
+    font-size: 18px;
+    background-color: #21252900;
+    border-color: #21252900;
+}
+
+.green-circle,
+.red-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    bottom: 40%; /* Ajusta la posición vertical del círculo */
+    left: calc(100% + -15px); /* Ajusta la posición horizontal del círculo */
+    transform: translateX(-50%); /* Centra horizontalmente el círculo */
+}
+
+.green-circle {
+    background-color: green;
+}
+
+.red-circle {
+    background-color: red;
+}
+
+.status-icon{
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+/* Estilos generales */
+.chat-container {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100%; /* Cambiar el ancho a 100% para que ocupe todo el ancho de la pantalla */
+    max-width: 350px; /* Agregar un ancho máximo para que no se vuelva demasiado ancho en pantallas grandes */
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 180;
+}
+
+/* Media queries para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .chat-container {
+        height: 100%;
+        bottom: 0;
+        right: 0;
+        max-width: 100%; /* Ocupar todo el ancho de la pantalla */
+        width: 100%; /* Ocupar todo el ancho de la pantalla */
+        border-radius: 0; /* Eliminar el borde redondeado en pantallas pequeñas */
+    }
+
+    .chat-header {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .chat-body {
+        height: 80%;
+        max-height: 90%;
+        min-height: 50vh;
+    }
+
+    .user-list {
+        max-height: 90%;
+    }
+
+    .message {
+        font-size: 12px;
+    }
+
+    .Cajachat{
+        max-height: 95%;
+    }
+    
+    /* Otros ajustes y cambios de estilo necesarios para dispositivos móviles */
+}
+
+

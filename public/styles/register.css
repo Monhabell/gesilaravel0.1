@@ -1,0 +1,246 @@
+html{height: 100%;}
+.color {color: black;}
+.colorWhitew {color: white;}
+
+.center-items{
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-right{
+  display: flex;
+  justify-content: right;
+}
+
+.flex-left{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.flex-between{
+  display: flex;
+  justify-content: space-between;
+}
+
+.w-100{
+  width: 100%;
+}
+
+.text-center{text-align: center;}
+.absolute{position: absolute;}
+.relative{position: relative;}
+
+.box-back{
+  width: 100%;
+  height: 100%;
+}
+
+.img-logo{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  margin-left: 3%;
+  margin-top: 5px;
+}
+
+label{font-size: 1.3em;}
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: white;
+  font-size: 12px;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.253);
+  border-radius: 10px;
+  padding: 5% 15%;
+  width: 35rem;
+  overflow: hidden;
+  transition: all ease-in-out 0.4s;
+}
+
+.req{color: #fa0021;}
+
+.login{
+  padding: 1%;
+  border-radius: 6px;
+  text-decoration: none !important;
+  color: #fff !important;
+  font-size: 1.2em;
+  color: #424242 !important;
+  background-color: rgba(255, 255, 255, 0.418);
+}
+
+.login:hover{
+  color: #000000 !important;
+  background-color: rgba(255, 255, 255, 0.623);
+}
+
+.box-title{
+  margin-bottom: 3%;
+  font-family: "Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.inset{
+  margin: 12% 0;
+  width: 400%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  transition: all ease-in 0.4s;
+}
+
+form h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.span-reg{
+  margin-top: -50%;
+  font-size: 1em;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 8px 18px;
+  background: #ffffff00;
+  border-radius: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ffffff00;
+  border-bottom: 1px solid #ffffff;
+  transition: all ease-in 0.4s;
+  color: #ffffff;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus{
+  outline: none;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.233);
+  color: #000000;
+}
+
+#password2,
+#password,
+#cargo,
+#apellido{margin-bottom: 5px;}
+
+span [id*='res']{
+  color: #af0000;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  outline: none;
+  border: 1px solid #00af35;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff00 inset ;
+  -webkit-text-fill-color: #000000;
+  color: #000000;
+}
+
+#section-1,
+#section-2,
+#section-3,
+#section-4{ 
+  width: 100%;
+  margin-left: 25%;
+  transition: all ease-in 0.5s;
+}
+
+#section-1{margin-left: 0;}
+#section-3{margin-left: 50%;}
+#section-4{margin-left: 75%;}
+.containerBtn {width: 100%;}
+.box-name{width: 100%;}
+
+option{
+  font-family: "Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  color: #000000;
+  font-size: 1.3em;
+}
+
+.btn-registro,
+.btn-next,
+.btn_back{
+  width: 100%;
+  border: none;
+  padding: 0 6% 0 1%;
+  border-radius: 25px;
+  height: 30px;
+  width: 6rem;
+  transition: all ease-in-out 0.2s;
+}
+
+.btn-next{padding: 0 1% 0 6%;}
+
+.btn-registro{
+  background-color: #328800;
+  width: 10rem;
+  font-size: 1.2em;
+}
+
+.btn-registro:disabled{background-color: #58585885;}
+.btn_back{background-color: #af0000;}
+.btn-next{background-color: #0300af;}
+
+.btn-next:hover,
+.btn_back:hover,
+.btn-registro:hover{
+  transform: scale(1.1);
+}
+
+.btn-registro:disabled:hover{transform: scale(1);}
+
+.desp-30-l{transform: translateX(-31%);}
+.desp-60-l{transform: translateX(-62.4%);}
+.desp-90-l{transform: translateX(-93.7%);}
+
+.span-reg-success,
+.span-reg-denied{
+  font-size: 1.8em;
+  color: #000000;
+}
+
+@media screen and (max-width:775px){
+  form{
+    width: 80%;
+    padding: 5% 8%;
+    margin-left: 10%;
+  }
+
+  form h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
